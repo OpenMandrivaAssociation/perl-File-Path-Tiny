@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Recursive versions of mkdir() and rmdir() without as much overhead as File::Path
 License:    GPL+ or Artistic
