@@ -1,15 +1,15 @@
 %define upstream_name    File-Path-Tiny
-%define upstream_version 0.1
+%define upstream_version 0.5
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.5
+Release:	1
 
-Summary:	Recursive versions of mkdir() and rmdir() without as much overhead as File::Path
+Summary:	Recursive versions of mkdir() and rmdir() without File::Path overhead
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/File-Path-Tiny-0.5.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
