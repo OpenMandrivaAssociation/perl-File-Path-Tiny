@@ -1,15 +1,15 @@
 %define upstream_name    File-Path-Tiny
-%define upstream_version 0.5
+%define upstream_version 0.7
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.5
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Recursive versions of mkdir() and rmdir() without File::Path overhead
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/File-Path-Tiny-0.5.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/File-Path-Tiny-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
@@ -53,4 +53,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Sat Oct 16 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.100.0-1mdv2011.0
 + Revision: 586064
 - import perl-File-Path-Tiny
+
 
